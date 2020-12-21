@@ -1,0 +1,7 @@
+You are a dot. 
+Use the arrow keys to find your identical dot. Once you touch your identical dot, you grow, and become identical to another dot. (the dot you just touched disapears)
+Once you are the only dot left, you move on to the next round. 
+Find all the dots before the timer runs out!
+Each round, the timer will go faster.
+If you reach 0 seconds on the time, you lose. 
+Have fun!
