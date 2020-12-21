@@ -1,6 +1,6 @@
 
   <head>
-  
+   <link rel="icon" type="image/png" href="https://jroo3121.github.io/files/images/jroo3.png"/>
   </head>
   <body>
   <center><h1>Hey everyone!</h1></center>
