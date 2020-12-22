@@ -16,6 +16,8 @@
     <p>
     
     <h1><a href="https://jroo3121.github.io/games.html">Games</a></h1>  
+    <h5><a href="https://jroo3121.github.io/friends.html">Friends' Websites</a></h5>  
+
       
       
   <style>
