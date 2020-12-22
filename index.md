@@ -22,7 +22,6 @@
     <p>
     <h5><a href="https://jroo3121.github.io/friends.html">Friends' Websites</a></h5>
     
-<a href="https://jroo3121.github.io/default.html">dd</a>
       
       
   <style>
