@@ -1,6 +1,7 @@
   <body>
   
   <center>
+    <p id="w" style="color:#ffffff;">Click on the 8ball to begin!</p>
     <p id="wlc" class="wlcc" style="color:#ffffff;"></p>
     <p>
       <p>
@@ -25,6 +26,8 @@ body {
 <script>
 
 function cc() {
+  document.getElementById("w").innerHTML = "";
+  
   var question = prompt("What question would you like to ask the great magic 8ball?", "");
  if (question != null) {
 
