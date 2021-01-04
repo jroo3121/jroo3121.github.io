@@ -1,6 +1,6 @@
 
  <head>
-  <link rel="shortcut icon" type="image/x-icon" href="https://jroo3121.github.io/files/images/jroo3.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
   <body>
   <center><h1>Hey everyone!</h1></center>
