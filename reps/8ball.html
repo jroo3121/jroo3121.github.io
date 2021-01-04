@@ -1,30 +1,28 @@
   <body>
   
   <center>
-    <p id="wlc" style="color: #000000;">
+    <p id="wlc" style="color: #ffffff;"></p>
     <p>
       <p>
         <p>
  <__! <img src="http://jroo3121.github.io/files/images/8ball.png" width="500" height="500" onclick="askQuestion();" /> __>
           
-          <button onclick="askQuestion()">ff</button>
+          <button onclick="cc()">ff</button>
   
   
   </body>
   
   <style>
 body {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 </style>
 
 <script>
 
-function askQuestion() {
-
-  var question = prompt("What question would you like to ask the great magic 8ball?")", "");
-
-if (question != null) {
+function cc() {
+  var question = prompt("What question would you like to ask the great magic 8ball?", "");
+ if (question != null) {
 
 var answers = ["As I see it, yes.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don’t count on it.", "It is certain.", "It is decidedly so.", "Most likely.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Outlook good.", "Reply hazy, try again.", "Signs point to yes.", "Very doubtful.", "Without a doubt.", "Yes.", "Yes – definitely.", "You may rely on it."];
 var rand = Math.floor((Math.random() * 20) + 1);
@@ -32,7 +30,7 @@ rand = rand - 1;
 var answer = answers[rand]
   document.getElementById("wlc").innerHTML =
   answer;
+  question = null;
 }
-
 }
 </script>
