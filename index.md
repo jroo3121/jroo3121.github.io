@@ -22,7 +22,7 @@
     <h1><a href="https://jroo3121.github.io/randomstuff.html">Miscellaneous Projects</a></h1>  
     <p>
     <h4>Contact me on Discord! jroo3121#7367</h4>
-    <h3><a href="https://discord.gg/GP5GTXM9v6">Join the Discord Server!</a></h3>
+    <h3><a href="https://discord.gg/xa5WGCPmtz">Join the Discord Server!</a></h3>
     <p>
     <h5><a href="https://jroo3121.github.io/friends.html">Friends' Websites</a></h5>
     
