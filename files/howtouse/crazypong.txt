@@ -1,1 +1,13 @@
+Press H to begin!
 
+Player 1 controls: WASD
+Player 2 controls: Arrow Keys
+
+Basically pong, except you can move horizontally. 
+Mini squares will appear every now and then. They are powerups. 
+Blue square (rare): Gives you an extra point
+Pink Square (uncommon): Increases your speed for that round. 
+Neon Green Square (common): Decreases your opponent's speed for that round. 
+Touch the squares with your paddle and you get the powerup! But they only remain until a goal is scored. 
+After a goal is scored, the round ends, and in 5 seconds, a new round will start. 
+Good Luck! Have Fun!
