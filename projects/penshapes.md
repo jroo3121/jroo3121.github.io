@@ -7,6 +7,6 @@
 </h2>
 <h5>
 </center>
-Enter a seed in the textbox! Can be any number! To hide textbox, enter with nothing. To show the textbox, press the up arrow.
+Enter a seed in the textbox! Can be any number! To hide the textbox, enter with nothing. To show the textbox, press the up arrow.
 <p>
-To change the background, press the spacebar WHILE the textbox is hidden!
+To change the background, press the spacebar while the textbox is hidden!
