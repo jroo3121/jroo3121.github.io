@@ -4,7 +4,6 @@
 <h2>
 <a href="https://jroo3121.github.io/reps/penshapes.html">Play</a>
 <p>
-</h2>
 <h5>
 </center>
 Enter a seed in the textbox! Can be any number! To hide the textbox, enter with nothing. To show the textbox, press the up arrow.
