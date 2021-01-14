@@ -2,9 +2,8 @@
 
 <center>
 <h2>
-<a href="https://jroo3121.github.io/reps/penshapes.html">Play</a>
+<a href="https://jroo3121.github.io/reps/penshapes.html">Go</a>
 <p>
-<h5>
 
   
   
