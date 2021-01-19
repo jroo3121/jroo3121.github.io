@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Koalas To The Max Custom Image</title>
+    </head>
+    <body>
+        <h1>Enter an Image Link</h1>
+        <form name="login">
+            <input type="text" name="userid"/>
+            <input type="button" onclick="check(this.form)" value="Go"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { 
+            
+            var cool = "https://www.koalastothemax.com/?" + form.userid.value;
+                    window.open(cool)
+
+            }
+        </script>
+    </body>
+</html>
