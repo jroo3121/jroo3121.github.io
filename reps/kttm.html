@@ -2,15 +2,15 @@
     <head>
         <title>Koalas To The Max Custom Image</title>
     </head>
-    <body>
-        <h1>Enter an Image Link</h1>
+    <body class="thrbody">
+        <p class="enterlink"><h1>Enter an Image Link</h1>
         <form name="login">
             <input type="text" name="userid"/>
             <input type="button" onclick="check(this.form)" value="Go"/>
             <input type="reset" value="Cancel"/>
         </form>
         <button onclick="openImg()" value="Search for image">Search for image</button>
-        
+        </p>
         <script language="javascript">
             function check(form) { 
             
@@ -25,3 +25,19 @@
         </script>
     </body>
 </html>
+
+<style>
+.thrbody {
+background-image: url("https://i.pinimg.com/originals/a4/7d/8f/a47d8ff476cc7edb8e988e1977cad282.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;        
+}
+    
+.enterlink {
+font-family: 'Courier New', monospace;     
+}
+    
+    
+    
+</style>
