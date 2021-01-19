@@ -9,7 +9,7 @@
             <input type="button" onclick="check(this.form)" value="Go"/>
             <input type="reset" value="Cancel"/>
         </form>
-        <iframe src="https://images.google.com/"/>
+        <button onclick="openImg()" value="Search for image"/>
         
         <script language="javascript">
             function check(form) { 
@@ -17,6 +17,10 @@
             var cool = "https://www.koalastothemax.com/?" + form.userid.value;
                     window.open(cool)
 
+            }
+            
+            function openImg() {
+                      window.open("https://images.google.com/")   
             }
         </script>
     </body>
