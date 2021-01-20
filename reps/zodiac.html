@@ -93,44 +93,61 @@
        var month = document.getElementById('months').value
        var date = document.getElementById('dates').value
        document.getElementById('zsign') = "hi"
+       var englishname = ["The Ram", "The Bull", "The Twins", "The Crab", "The Lion", "The Maiden", "The Scales", "The Scorpion", "The Centaur", "The Sea Goat", "The Water Carrier", "The Two Fish"]
+       var elements = ["Fire", "Earth", "Air", "Water", "Fire", "Earth", "Air", "Water", "Fire", "Earth", "Air", "Water"]
+       var qualitys = ["Cardinal", "Fixed", "Mutable", "Cardinal", "Fixed", "Mutable", "Cardinal", "Fixed", "Mutable", "Cardinal", "Fixed", "Mutable"]
+       var pola = ["Positive", "Negative", "Positive", "Negative", "Positive", "Negative", "Positive", "Negative", "Positive", "Negative", "Positive", "Negative"]
+       var plann = ["Mars", "Earth", "Mercury", "Moon", "Sun", "Mercury", "Venus", "Pluto", "Jupiter", "Saturn", "Uranus", "Neptune"]
+       var perid = ["March 21 - April 20", "April 21 - May 20", "May 21 - June 20", "June 21 - July 22", "July 23 - August 23", "August 24 - September 22", "September 23 - October 23", "October 24 - November 22", "November 23 - December 21", "December 22 - January 19", "January 20 - February 18", "February 19 - March 20"]
        var sign = ""
+       var an = 0
        
        if (month == "January") {
            
            if (date < 20) {
                sign = "Capricorn"
+               an = 9
            } else {
                sign = "Aquarius"
+               an = 10
            }
            
        }
         if (month == "February") {
             if (date < 19) {
                 sign = "Aquarius"
+                an = 10
             } else {
-                sign = "Pisces"   
+                sign = "Pisces" 
+                an = 11
             }
            
        }
         if (month == "March") {
             if (date < 21) {
                 sign = "Pisces"
+                an = 11
             } else {
                 sign = "Aries"   
+                an = 0
             }
        }
         if (month == "April") {
             if (date < 21) {
                 sign = "Aries"
+                an = 0
             } else {
                 sign = "Taurus"   
+                an = 1
             }
        }
         if (month == "May") {
            if (date < 21) {
                 sign = "Taurus"
+                an = 1
             } else {
                 sign = "Gemini"   
+                an = 2
             }
             
             
@@ -138,16 +155,20 @@
         if (month == "June") {
            if (date < 21) {
                 sign = "Gemini"
+                an = 2
             } else {
                 sign = "Cancer"   
+                an = 3
             }
             
        }
         if (month == "July") {
             if (date < 23) {
                 sign = "Cancer"
+                an = 3
             } else {
                 sign = "Leo"   
+                an = 4
             }
             
             
@@ -155,8 +176,10 @@
         if (month == "August") {
             if (date < 24) {
                 sign = "Leo"
+                an = 4
             } else {
-                sign = "Virgo"   
+                sign = "Virgo"  
+                an = 5
             }
             
             
@@ -164,8 +187,10 @@
         if (month == "September") {
            if (date < 23) {
                 sign = "Virgo"
+               an = 5
             } else {
                 sign = "Libra"   
+                an = 6
             }
             
             
@@ -173,8 +198,10 @@
         if (month == "October") {
            if (date < 24) {
                 sign = "Libra"
+               an = 6
             } else {
-                sign = "Scorpio"   
+                sign = "Scorpio" 
+                an = 7
             }
             
             
@@ -182,8 +209,10 @@
         if (month == "November") {
          if (date < 23) {
                 sign = "Scorpio"
+             an = 7
             } else {
-                sign = "Sagittarius"   
+                sign = "Sagittarius" 
+                an = 8
             }
             
        }
@@ -191,8 +220,10 @@
         if (month == "December") {
            if (date < 22) {
                 sign = "Sagittarius"
+               an = 8
             } else {
                 sign = "Capricorn"   
+                an = 9
             }
             
            
