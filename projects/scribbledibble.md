@@ -11,3 +11,5 @@
 Click to change color.
 <p>
 Double-click to clear screen.
+  <p>
+    Powered by jasonpollock.
