@@ -1,0 +1,212 @@
+<select name="months" id="months">
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+
+<select name="dates" id="dates">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+    
+    <button onclick="check()" value="What is my zodiac sign?">What is my zodiac sign?</button>
+    
+
+<p id="lll"></p>
+<table class="tg">
+<thead>
+  <tr>
+      
+    <th class="tg-0lax">Sign</th>
+    <th class="tg-0lax">English Name</th>
+    <th class="tg-0lax">Element</th>
+    <th class="tg-0lax">Quality</th>
+    <th class="tg-0lax">Polarity</th>
+    <th class="tg-0lax">Planet</th>
+    <th class="tg-0lax">Period</th>
+
+  </tr>
+  
+</thead>
+    <tbody>
+        <tr>
+    <th id="zsign" class="tg-0lax">d</th>
+    <th id="english" class="tg-0lax">d</th>
+    <th id="element" class="tg-0lax">d</th>
+    <th id="quality" class="tg-0lax">d</th>
+    <th id="polarity" class="tg-0lax">d</th>
+    <th id="planet" class="tg-0lax">d</th>
+    <th id="period" class="tg-0lax">d</th>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+   
+
+
+
+<script>
+    
+    function check() {
+       var month = document.getElementById('months').value
+       var date = document.getElementById('dates').value
+       document.getElementById('zsign') = "hi"
+       var sign = ""
+       
+       if (month == "January") {
+           
+           if (date < 20) {
+               sign = "Capricorn"
+           } else {
+               sign = "Aquarius"
+           }
+           
+       }
+        if (month == "February") {
+            if (date < 19) {
+                sign = "Aquarius"
+            } else {
+                sign = "Pisces"   
+            }
+           
+       }
+        if (month == "March") {
+            if (date < 21) {
+                sign = "Pisces"
+            } else {
+                sign = "Aries"   
+            }
+       }
+        if (month == "April") {
+            if (date < 21) {
+                sign = "Aries"
+            } else {
+                sign = "Taurus"   
+            }
+       }
+        if (month == "May") {
+           if (date < 21) {
+                sign = "Taurus"
+            } else {
+                sign = "Gemini"   
+            }
+            
+            
+       }
+        if (month == "June") {
+           if (date < 21) {
+                sign = "Gemini"
+            } else {
+                sign = "Cancer"   
+            }
+            
+       }
+        if (month == "July") {
+            if (date < 23) {
+                sign = "Cancer"
+            } else {
+                sign = "Leo"   
+            }
+            
+            
+       }
+        if (month == "August") {
+            if (date < 24) {
+                sign = "Leo"
+            } else {
+                sign = "Virgo"   
+            }
+            
+            
+       }
+        if (month == "September") {
+           if (date < 23) {
+                sign = "Virgo"
+            } else {
+                sign = "Libra"   
+            }
+            
+            
+       }
+        if (month == "October") {
+           if (date < 24) {
+                sign = "Libra"
+            } else {
+                sign = "Scorpio"   
+            }
+            
+            
+       }
+        if (month == "November") {
+         if (date < 23) {
+                sign = "Scorpio"
+            } else {
+                sign = "Sagittarius"   
+            }
+            
+       }
+        
+        if (month == "December") {
+           if (date < 22) {
+                sign = "Sagittarius"
+            } else {
+                sign = "Capricorn"   
+            }
+            
+           
+       }
+        
+        alert(sign)
+    }     
+
+</script>    
+    
+    <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+    
