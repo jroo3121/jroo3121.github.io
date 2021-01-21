@@ -1,6 +1,7 @@
 
 <head>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  
 </head>
   <body>
   <center><h1>Hey everyone!</h1></center>
@@ -26,10 +27,22 @@
     <p>
     <h5><a href="https://jroo3121.github.io/friends.html">Friends' Websites</a></h5>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
       
-      
-  <style>
-body {
-  background-color: #000000;
+$('body').append('<div style="" id="loadingDiv"><div class="loader texty">Loading...</div></div>');
+$(window).on('load', function(){
+  setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(600, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loadingDiv" ).remove(); //makes page more lightweight 
+  });  
 }
-</style>
+</script>
+ </body>
+ 
+      
+      
+
