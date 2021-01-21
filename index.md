@@ -104,7 +104,6 @@ function removeLoader(){
   });  
 }
 </script>
- </body>
  
       
       
