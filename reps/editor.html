@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>HTML Editor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+  </style>
+<script type="text/javascript">
+
+var editboxHTML = 
+'<html class="expand close">' +
+'<head>' +
+'<style type="text/css">' +
+'.expand { width: 100%; height: 100%; }' +
+'.close { border: none; margin: 0px; padding: 0px; }' +
+'html,body { overflow: hidden; }' +
+'<\/style>' +
+'<\/head>' +
+'<body class="expand close" onload="document.f.ta.focus(); document.f.ta.select();">' +
+'<form class="expand close" name="f">' +
+'<textarea class="expand close" style="background: #def;" name="ta" wrap="hard" spellcheck="false">' +
+'<\/textarea>' +
+'<\/form>' +
+'<\/body>' +
+'<\/html>';
+
+var defaultStuff = '<!DOCTYPE html>\n' +
+'<html lang="en">\n'+
+'<head>\n' +
+'<title>No Title Yet</title>\n'+
+'<meta charset="utf-8">\n'+
+'<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'+
+'<link rel="icon" type="image/png" href="https://insert-image-link-here.com"/>\n'+
+'</head>\n'+
+'<body>\n'+
+'<h1>Nothing Here Yet</h1>\n'+
+'<p>Test It Out!</p>\n'+
+'<p>Work in progress</p>\n'+
+'</body>\n'+
+'</html>\n'+
+'<!--To use JavaScript, use the <script> tag.-->\n'+
+'<!--To use CascadingStyleSheets, use the <style> tag. Sorry for the inconvenience, but if you want to use a real text editor, get your hands on VS Code or something. --> ';
+var extraStuff = '<div style="position:absolute; margin:.3em; bottom:0em; right:0em;"><small>\n  Made by neildaniel00 Edited and remixed a bit by jroo3121. Work in progress.\n<\/small><\/div>';
+
+var old = '';
+         
+function init()
+{
+  window.editbox.document.write(editboxHTML);
+  window.editbox.document.close();
+  window.editbox.document.f.ta.value = defaultStuff;
+  update();
+}
+function changeview() {   
+var element = document.body;   
+element.classList.toggle(".size");
+}
+function update()
+{
+  var textarea = window.editbox.document.f.ta;
+  var d = dynamicframe.document; 
+
+  if (old != textarea.value) {
+    old = textarea.value;
+    d.open();
+    d.write(old);
+    if (old.replace(/[\r\n]/g,'') == defaultStuff.replace(/[\r\n]/g,''))
+      d.write(extraStuff);
+    d.close();
+  }
+
+  window.setTimeout(update, 150);
+}
+
+</script>
+<style>
+  .size {
+    rows: 50%;
+    cols: 100%;
+  }
+  </style>
+</head>
+<frameset resizable="yes" rows="100%,*" cols="50%,*" onload="init();">
+  <frame name="editbox" src="javascript:'';">
+  <frame resizable="yes" name="dynamicframe" src="javascript:'';">
+</frameset>
+</html>
