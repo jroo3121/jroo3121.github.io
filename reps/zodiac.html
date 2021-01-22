@@ -1,3 +1,5 @@
+<body>
+<form name="fom" id="fom">
 <select name="months" id="months">
 <option>January</option>
 <option>February</option>
@@ -47,8 +49,9 @@
 <option>31</option>
 </select>
     
-    <button onclick="check()" value="What is my zodiac sign?">What is my zodiac sign?</button>
-    
+   <input type="button" onclick="checka();" value="What is my zodiac sign?"/>
+    <!--<button onclick="checka()">What is my zodiac sign?</button>-->
+</form>    
 
 <p id="lll"></p>
 <div class="tabb">
@@ -88,12 +91,9 @@
 
 
 <script>
-    
-    function check() {
-        alert("yo")
+    function checka() {
        var month = document.getElementById('months').value
        var date = document.getElementById('dates').value
-       document.getElementById('zsign') = "hi"
        var englishname = ["The Ram", "The Bull", "The Twins", "The Crab", "The Lion", "The Maiden", "The Scales", "The Scorpion", "The Centaur", "The Sea Goat", "The Water Carrier", "The Two Fish"]
        var elements = ["Fire", "Earth", "Air", "Water", "Fire", "Earth", "Air", "Water", "Fire", "Earth", "Air", "Water"]
        var qualitys = ["Cardinal", "Fixed", "Mutable", "Cardinal", "Fixed", "Mutable", "Cardinal", "Fixed", "Mutable", "Cardinal", "Fixed", "Mutable"]
@@ -230,13 +230,6 @@
            
        }
         
-         alert(sign);
-        alert(englishname[an]);
-        alert(elements[an]);
-        alert(qualitys[an)];
-        alert(pola[an]);
-        alert(plann[an]);
-        alert(perid[an]);
         
         document.getElementById("zsign").innerHTML = sign;
         document.getElementById("english").innerHTML = englishname[an];
@@ -249,7 +242,7 @@
     }     
 
 </script>    
-    
+</body>
     <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:28px;
