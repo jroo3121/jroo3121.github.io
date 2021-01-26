@@ -1,0 +1,13 @@
+<title>Random Color</title>
+<body>
+button onclick="getColor()">Get Color</button>
+<script>
+var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+document.body.style.backgroundColor = randomcolor;
+
+function getColor() { 
+  alert(randomColor);
+}
+
+</script>
+</body>
