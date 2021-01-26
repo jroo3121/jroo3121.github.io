@@ -2,7 +2,9 @@
 <h2>Text Area is Expandable!</h2>
 <div class="ehi-wordcount-container"><textarea placeholder="Enter your text here..." rows=7></textarea></p><div class="output row"><div>Characters: <span id="characterCount">0</span></div>
     <div>Characters Without Spaces: <span id="nospaceCount">0</span></div>
-    <div>Words: <span id="wordCount">0</span></div></div><div class="output row"><div>Sentences: <span id="sentenceCount">0</span></div><div>Paragraphs: <span id="paragraphCount">0</span></div></div><div class="output row"><div>Reading Time: <span id="readingTime">0</span></div></div><div class="keywords">Top keywords:</p><ul id="topKeywords"></ul></div></div><p> <script type="text/javascript">"use strict";
+    <div>Words: <span id="wordCount">0</span></div></div><div class="output row"><div>Sentences: <span id="sentenceCount">0</span></div><div>Paragraphs: <span id="paragraphCount">0</span></div></div><div class="output row"><div>Reading Time (approximately): <span id="readingTime">0</span></div>
+<div>Speaking Time (approximately): <span id="speakTime">0</span></div>
+</div><div class="keywords">Top keywords:</p><ul id="topKeywords"></ul></div></div><p> <script type="text/javascript">"use strict";
 var input = document.querySelectorAll('textarea')[0],
   characterCount = document.querySelector('#characterCount'),
   nospaceCount = document.querySelector('#nospaceCount'),
@@ -10,6 +12,7 @@ var input = document.querySelectorAll('textarea')[0],
   sentenceCount = document.querySelector('#sentenceCount'),
   paragraphCount = document.querySelector('#paragraphCount'),
   readingTime = document.querySelector('#readingTime'),
+  speakTime = document.querySelector('#speakTime'),
   keywordsDiv = document.querySelectorAll('.keywords')[0],
   topKeywords = document.querySelector('#topKeywords');
 
@@ -72,6 +75,21 @@ input.addEventListener('keyup', function() {
     }
   } else {
     readingTime.innerHTML = "0s";
+  }
+    
+    
+    if (words) {
+    var secondss = Math.floor(words.length * 60 / 130);
+    // need to convert seconds to minutes and hours
+    if (secondss > 59) {
+      var minutess = Math.floor(secondss / 60);
+      secondss = secondss - minutess * 60;
+      speakTime.innerHTML = minutess + "m " + secondss + "s";
+    } else {
+      speakTime.innerHTML = secondss + "s";
+    }
+  } else {
+    speakTime.innerHTML = "0s";
   }
 
   // finding out top keywords and their count
