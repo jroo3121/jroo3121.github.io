@@ -12,3 +12,5 @@
         <a href="https://jroo3121.github.io/projects/scribbledibble.html">Scribble Dibble</a>
       <p>
 	      <a href="https://jroo3121.github.io/reps/zodiac.html">Zodiac Sign</a>
+	 <p>
+		 <a href="https://jroo3121.github.io/reps/wordcount.html">Word Counter</a>
