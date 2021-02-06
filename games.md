@@ -11,6 +11,9 @@
         <a href="https://jroo3121.github.io/reps/tictactoe.html">Console Tic Tac Toe</a>
 
    <p>
+        <a href="https://jroo3121.github.io/reps/hangmanphrase.html">Phrase Hangman</a>
+<p>
+    
      <a href="https://jroo3121.github.io/reps/hangman.html">Console Hangman</a>
 
    <p>
