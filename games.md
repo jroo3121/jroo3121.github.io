@@ -21,3 +21,8 @@
     <a href="https://jroo3121.github.io/projects/crazypong.html">Crazy Pong (2 players)</a>
     <p>
     <a href="https://jroo3121.github.io/projects/clash2player.html">Clash (2 players)</a>
+    <p>
+    <a href="https://jroo3121.github.io/reps/platformer/index.html">Platformer by Luigi_FTW</a>
+    <p>
+    <h4>arrow keys to move, r to restart level, s to skip</h4>
+    <p>
