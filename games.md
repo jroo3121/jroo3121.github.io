@@ -8,7 +8,7 @@
     <p>
 <a href="https://jroo3121.github.io/projects/supersnake.html">Super Snake</a>
   <p>
-       <a href="https://jroo3121.github.io/reps/spikewave.html">Spike Wave</a>
+       <a href="https://jroo3121.github.io/reps/spikewave/index.html">Spike Wave</a>
     <p>
 <a href="https://jroo3121.github.io/projects/xwing.html">Star Wars: X-wing VS Death Star</a>
     <p>
