@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random NFL Teams</title>
+</head>
+<body>
+    <h1>Random NFL Teams</h1>
+    <button onclick="showRandomTeams()">Show Random Teams</button>
+    <p id="team1"></p>
+    <p id="team2"></p>
+
+    <script>
+        const nflTeams = [
+            "Arizona Cardinals",
+            "Atlanta Falcons",
+            "Baltimore Ravens",
+            "Buffalo Bills",
+            "Carolina Panthers",
+            "Chicago Bears",
+            "Cincinnati Bengals",
+            "Cleveland Browns",
+            "Dallas Cowboys",
+            "Denver Broncos",
+            "Detroit Lions",
+            "Green Bay Packers",
+            "Houston Texans",
+            "Indianapolis Colts",
+            "Jacksonville Jaguars",
+            "Kansas City Chiefs",
+            "Las Vegas Raiders",
+            "Los Angeles Chargers",
+            "Los Angeles Rams",
+            "Miami Dolphins",
+            "Minnesota Vikings",
+            "New England Patriots",
+            "New Orleans Saints",
+            "New York Giants",
+            "New York Jets",
+            "Philadelphia Eagles",
+            "Pittsburgh Steelers",
+            "San Francisco 49ers",
+            "Seattle Seahawks",
+            "Tampa Bay Buccaneers",
+            "Tennessee Titans",
+            "Washington Commanders"
+        ];
+
+        function getRandomTeams() {
+            const team1 = nflTeams[Math.floor(Math.random() * nflTeams.length)];
+            let team2;
+            do {
+                team2 = nflTeams[Math.floor(Math.random() * nflTeams.length)];
+            } while (team1 === team2);
+            return [team1, team2];
+        }
+
+        function showRandomTeams() {
+            const [team1, team2] = getRandomTeams();
+            document.getElementById('team1').innerText = team1;
+            document.getElementById('team2').innerText = team2;
+        }
+    </script>
+</body>
+</html>
