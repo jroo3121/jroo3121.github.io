@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Starting Download...</title>
+  <meta http-equiv="refresh" content="3;url=https://raw.githubusercontent.com/jroo3121/Tkinter-Tic-Tac-Toe/refs/heads/main/TicTacToe.py" />
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+    .btn { 
+      padding: 10px 20px; 
+      background-color: #007bff; 
+      color: white; 
+      text-decoration: none; 
+      border-radius: 5px; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Your download should start automatically! 🚀</h1>
+  <p>If it does not start within 3 seconds, please click the link below:</p>
+
+  <p>
+    <a 
+      class="btn" 
+      href="https://raw.githubusercontent.com/jroo3121/Tkinter-Tic-Tac-Toe/refs/heads/main/TicTacToe.py" 
+      download="TicTacToe.py"
+    >
+      Click to Download TicTacToe.py Now
+    </a>
+  </p>
+
+  <script>
+    // Optional: Use JavaScript to attempt to force the download immediately
+    var link = document.createElement('a');
+    link.href = 'https://raw.githubusercontent.com/jroo3121/Tkinter-Tic-Tac-Toe/refs/heads/main/TicTacToe.py';
+    link.download = 'TicTacToe.py';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  </script>
+
+</body>
+</html>
 
